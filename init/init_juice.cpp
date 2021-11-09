@@ -72,8 +72,25 @@ void vendor_load_properties() {
         property_override(prop_name.c_str(), value.c_str(), false);
     };
     
-    property_override("ro.build.fingerprint", "POCO/citrus_eea/citrus:11/RKQ1.201004.002/V12.5.2.0.RJFEUXM:user/release-keys");
-    property_override("ro.build.description", "citrus_eea-user 11 RKQ1.201004.002 V12.5.2.0.RJFEUXM release-keys");
+    property_override("ro.system_ext.build.fingerprint", "Redmi/lime_global/lime:10/QKQ1.200830.002/V12.0.7.0.QJQMIXM:user/release-keys");
+    
+    property_override("ro.bootimage.build.fingerprint", "Redmi/lime_global/lime:10/QKQ1.200830.002/V12.0.7.0.QJQMIXM:user/release-keys");
+    
+    property_override("ro.vendor.build.fingerprint", "Redmi/lime_global/lime:10/QKQ1.200830.002/V12.0.7.0.QJQMIXM:user/release-keys");
+    
+    property_override("ro.product.build.fingerprint", "Redmi/lime_global/lime:10/QKQ1.200830.002/V12.0.7.0.QJQMIXM:user/release-keys");
+    
+property_override("ro.odm.build.fingerprint", "Redmi/lime_global/lime:10/QKQ1.200830.002/V12.0.7.0.QJQMIXM:user/release-keys");
+
+    property_override("ro.build.fingerprint", "Redmi/lime_global/lime:10/QKQ1.200830.002/V12.0.7.0.QJQMIXM:user/release-keys");
+    
+    property_override("ro.build.fingerprint_real", "Redmi/lime_global/lime:10/QKQ1.200830.002/V12.0.7.0.QJQMIXM:user/release-keys");
+    
+property_override("ro.system.build.fingerprint", "Redmi/lime_global/lime:10/QKQ1.200830.002/V12.0.7.0.QJQMIXM:user/release-keys");
+
+    property_override("ro.system.build.fingerprint_real", "Redmi/lime_global/lime:10/QKQ1.200830.002/V12.0.7.0.QJQMIXM:user/release-keys");
+    
+    property_override("ro.build.description", "lime-user 10 QKQ1.200830.002 V12.0.7.0.QJQMIXM release-keys");
    
     std::string region = GetProperty("ro.boot.hwc", "");
     std::string hwname = GetProperty("ro.boot.product.hardware.sku", "");
